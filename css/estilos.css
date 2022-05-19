@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Bebas Neue';
+	font-size: 1.5rem;
+	background-color: seagreen;
+}
+.logo{
+	width: 70px;
+	height: 60px;
+	padding: 5px;
+}
+.banner img{
+	max-width: 100%;
+	max-height: 100%;
+}
+.logoRedes{
+	padding: 30px;
+	text-align: center;
+}
+.logoRedes img{
+	width: 70px;
+	height: 70px;
+}
+.titulo{
+	text-align: center;
+	color: white;
+	margin: 15px;
+	padding: 10px;
+}
+.pie p{
+	color: white;
+	margin: 5px;
+	padding: 5px;
+}
+.texto{
+	text-align: center;
+	margin: 15px;
+	padding: 10px;
+}
+.tarjetas{
+	margin: 15px;
+}
