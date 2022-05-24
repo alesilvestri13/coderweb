@@ -9,7 +9,7 @@ body{
 	background-color: seagreen;
 }
 .logo{
-	width: 117px;
+	width: 130px;
 	height: 60px;
 	padding: 5px;
 }
@@ -25,22 +25,52 @@ body{
 	width: 70px;
 	height: 70px;
 }
+.texto{
+	text-align: center;
+	margin: 15px;
+	padding: 10px;
+	animation-name: rotar;
+	animation-duration: 3s;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+	
+}
+@keyframes rotar{
+	0%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateY(5%);
+	}
+}
+.tarjetas{
+	margin: 15px;
+	padding: 5px;
+}
 .titulo{
 	text-align: center;
 	color: white;
 	margin: 15px;
 	padding: 10px;
+	animation-name: mover;
+	animation-duration: 3s;
+	animation-direction: reverse;
+	
 }
-.pie p{
-	color: white;
-	margin: 5px;
-	padding: 5px;
+@keyframes mover{
+	0%{
+		transform: translateX(0%);
+	}
+	100%{
+		transform: translateX(100%);
+	}
 }
-.texto{
-	text-align: center;
-	margin: 15px;
-	padding: 10px;
-}
-.tarjetas{
-	margin: 15px;
+@media all and (max-width: 768px){
+	body{
+		font-size: 1rem;
+	}
+	.logoRedes img{
+		width: 50px;
+		height: 50px;
+	}
 }
