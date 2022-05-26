@@ -1,76 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-*{
-	margin: 0;
-	padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-	font-family: 'Bebas Neue';
-	font-size: 1.5rem;
-	background-color: seagreen;
+
+body {
+  font-family: 'Bebas Neue';
+  font-size: 1.5rem;
+  background-color: seagreen;
 }
-.logo{
-	width: 130px;
-	height: 60px;
-	padding: 5px;
+
+.logoRedes {
+  padding: 30px;
+  text-align: center;
+  padding: 30px;
+  text-align: center;
 }
-.banner img{
-	max-width: 100%;
-	max-height: 100%;
+
+.logoRedes img {
+  width: 70px;
+  height: 70px;
 }
-.logoRedes{
-	padding: 30px;
-	text-align: center;
+
+.banner {
+  border: 1px solid;
+  margin: 5px;
 }
-.logoRedes img{
-	width: 70px;
-	height: 70px;
+
+.banner img {
+  max-width: 100%;
+  max-height: 100%;
 }
-.texto{
-	text-align: center;
-	margin: 15px;
-	padding: 10px;
-	animation-name: rotar;
-	animation-duration: 3s;
-	animation-direction: normal;
-	animation-iteration-count: infinite;
-	
+
+.texto {
+  text-align: center;
+  margin: 15px;
+  padding: 10px;
+  animation-name: rotar;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
 }
-@keyframes rotar{
-	0%{
-		transform: translateY(0%);
-	}
-	100%{
-		transform: translateY(5%);
-	}
+
+.texto p {
+  color: black;
+  text-decoration: unset;
 }
-.tarjetas{
-	margin: 15px;
-	padding: 5px;
+
+.titulo {
+  text-align: center;
+  color: white;
+  margin: 15px;
+  padding: 10px;
+  animation-name: mover;
+  animation-duration: 3s;
+  animation-direction: reverse;
 }
-.titulo{
-	text-align: center;
-	color: white;
-	margin: 15px;
-	padding: 10px;
-	animation-name: mover;
-	animation-duration: 3s;
-	animation-direction: reverse;
-	
+
+.tarjetas {
+  margin: 15px;
+  padding: 5px;
 }
-@keyframes mover{
-	0%{
-		transform: translateX(0%);
-	}
-	100%{
-		transform: translateX(100%);
-	}
+
+.logo {
+  width: 130px;
+  height: 60px;
+  padding: 5px;
 }
-@media all and (max-width: 768px){
-	body{
-		font-size: 1rem;
-	}
-	.logoRedes img{
-		width: 50px;
-		height: 50px;
-	}
+
+@keyframes mover {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@media all and (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+  .logoRedes img {
+    width: 50px;
+    height: 50px;
+  }
 }
