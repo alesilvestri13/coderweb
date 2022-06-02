@@ -1,20 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-*{
-	margin: 0;
-	padding: 0;
-}
+
+//Variables
 
 $color-bg : seagreen;
 $color-titulo: white;
 $color-text: black;
 
-body{
-	font-family: 'Bebas Neue';
-	font-size: 1.5rem;
-	background-color: $color-bg;
-}
+//Mixin
 
-.logoRedes{
+@mixin redes{
 	padding: 30px;
 	text-align: center;
 	img{
@@ -23,6 +17,43 @@ body{
 	}
 	padding: 30px;
 	text-align: center;
+}
+
+//Extend 
+
+.btn{
+	@extend .btn;
+	font-size: 1.3rem;
+	padding: 5px;
+	margin: 5px;
+	color: $color-text;
+}
+
+//Maps 
+
+$fuentes:(
+	ligth: 1.3rem,
+	normal: 1.7rem,
+	bold: 2rem,
+);
+
+$ligth: map-get($fuentes, normal);
+
+//Sass
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Bebas Neue';
+	font-size: map-get($fuentes, normal);
+	background-color: $color-bg;
+}
+
+.logoRedes{
+	@include redes 
 }
 
 .banner{
@@ -59,6 +90,7 @@ body{
 }
 
 .tarjetas{
+	font-size: map-get($fuentes, ligth);
 	margin: 15px;
 	padding: 5px;
 }
