@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 .btn {
   font-size: 1.3rem;
   padding: 5px;
@@ -74,6 +75,17 @@ body {
   width: 130px;
   height: 60px;
   padding: 5px;
+}
+
+.servicios{
+  text-align: center;
+  margin-top: 30px;
+  padding: 5px;
+}
+
+.direccion{
+  text-align: left;
+  color: white;
 }
 
 @keyframes mover {

@@ -101,6 +101,17 @@ body{
 	padding: 5px;
 }
 
+.servicios{
+	text-align: center;
+	margin-top: 30px;
+	padding: 5px;
+}
+
+.direccion{
+	text-align: left;
+	color: $color-titulo;
+}
+
 @keyframes mover{
 	0%{
 		transform: translateX(0%);
