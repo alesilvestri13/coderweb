@@ -83,6 +83,12 @@ body {
   padding: 5px;
 }
 
+.servicio{
+  margin: 35px;
+  color: gold;
+  font-size: 1.2rem;
+}
+
 .direccion{
   text-align: left;
   color: white;
