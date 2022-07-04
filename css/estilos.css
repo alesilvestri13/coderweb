@@ -87,11 +87,13 @@ body {
   margin: 35px;
   color: gold;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .direccion{
-  text-align: left;
-  color: white;
+  text-align: center;
+  padding: 10px;
+  list-style: none;
 }
 
 @keyframes mover {
